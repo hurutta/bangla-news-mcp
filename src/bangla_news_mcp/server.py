@@ -6,7 +6,7 @@ from typing import Any, Dict
 
 from mcp.server.fastmcp import FastMCP
 
-from web_client import WebClient
+from . import web_client
 
 logging.basicConfig(
     level=logging.INFO,
@@ -20,7 +20,7 @@ mcp = FastMCP(
     description="MCP server for retrieving bangla news"
 )
 
-web_client = WebClient()
+web_client = web_client.WebClient()
 
 
 @mcp.tool()
@@ -36,6 +36,7 @@ async def fetch_news_headlines_by_query(query: str = "sports") -> Dict[str, Any]
 
 
 def main():
+    logger.info("Starting Bangla news MCP server")
     mcp.run()
 
 
