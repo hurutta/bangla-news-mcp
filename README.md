@@ -1,10 +1,11 @@
+[<img src="assets/bangla_news_mcp_logo.png" style="height:138px" align="right">](https://extensions.gnome.org/extension/6334/bangla-time/)
+
 <div style="display: flex; align-items: center;">
 
   <div style="flex: 1;">
     <h1 style="margin: 0;">Bangla News MCP Server</h1>
     <p style="margin-top: 0;">A Model Context Protocol (MCP) server that retrieves Bangla news to provide context to LLMs.</p>
   </div>
-    <img src="assets/bangla_news_mcp_logo.png" style="height: 100px;">
 </div>
 
 
