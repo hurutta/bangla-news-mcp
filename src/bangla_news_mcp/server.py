@@ -1,18 +1,32 @@
 """
 Main entry point for the Bangla News MCP server.
 """
+import logging
+from typing import Any, Dict
 
 from mcp.server.fastmcp import FastMCP
+
+from web_client import WebClient
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='[%(asctime)s] %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
 
 mcp = FastMCP(
     name="Bangla News MCP",
     description="MCP server for retrieving bangla news"
 )
 
+web_client = WebClient()
+
 
 @mcp.tool()
-def health(name: str = 'jawad') -> str:
-    return "Server is up and running, " + name
+async def fetch_latest_news_titles() -> Dict[str, Any]:
+    response = await web_client.fetch_headlines()
+    return response
 
 
 def main():
