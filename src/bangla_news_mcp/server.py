@@ -24,8 +24,14 @@ web_client = WebClient()
 
 
 @mcp.tool()
-async def fetch_latest_news_titles() -> Dict[str, Any]:
+async def fetch_latest_news_headlines() -> Dict[str, Any]:
     response = await web_client.fetch_headlines()
+    return response
+
+
+@mcp.tool()
+async def fetch_news_headlines_by_query(query: str = "sports") -> Dict[str, Any]:
+    response = await web_client.fetch_headlines(query)
     return response
 
 

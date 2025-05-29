@@ -10,12 +10,17 @@ class WebClient:
         self.headers = {}
         self.client = httpx.AsyncClient(base_url=self.base_url, headers=self.headers, timeout=30)
 
-    async def fetch_headlines(self) -> Dict[str, Any]:
+    async def fetch_headlines(self, query: str = None) -> Dict[str, Any]:
         """
         Returns a JSON string of news titles.
         """
 
-        rss_url = f"{self.base_url}/rss?hl=bn&gl=BD&ceid=BD:bn"
+        if query is None:
+            rss_url = f"{self.base_url}/rss?hl=bn&gl=BD&ceid=BD:bn"
+        else:
+            query_encoded = query.replace(" ", "+")
+            rss_url = f"{self.base_url}/rss/search?q={query_encoded}&hl=bn&gl=BD&ceid=BD:bn"
+
         response = await self.client.get(rss_url)
         response.raise_for_status()
 

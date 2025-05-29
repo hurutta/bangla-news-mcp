@@ -18,10 +18,15 @@ async def main():
             print("available tools:", [t.name for t in tools.tools])
 
             resp = await session.call_tool(
-                "health",
-                arguments={"name": "Abid"},
+                "fetch_latest_news_headlines",
             )
-            print("Response:", resp)
+            print("Response:", resp.content[0].text)
+
+            resp = await session.call_tool(
+                "fetch_news_headlines_by_query",
+                arguments={"query": "weather"},
+            )
+            print("Response:", resp.content[0].text)
 
 
 if __name__ == "__main__":
