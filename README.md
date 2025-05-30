@@ -15,9 +15,10 @@
 
 [![MCP](https://badge.mcpx.dev?type=server)](https://github.com/modelcontextprotocol/servers)
 [![smithery badge](https://smithery.ai/badge/@hurutta/bangla-news-mcp)](https://smithery.ai/server/@hurutta/bangla-news-mcp)
+[![PyPI - Version](https://img.shields.io/pypi/v/bangla-news-mcp)](https://pypi.org/project/bangla-news-mcp/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)
 [![Issues](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)
-[![License](https://img.shields.io/github/license/hurutta/bangla-news-mcp.svg)](https://github.com/hurutta/bangla-news-mcp/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/hurutta/bangla-news-mcp)](https://github.com/hurutta/bangla-news-mcp/blob/main/LICENSE)
 
 </div>
 
@@ -89,10 +90,10 @@ Add to your Claude settings:
 
 
 #### Fetch latest bangla news headlines
- - `,,,`: TODO
+ - `fetch_latest_news_headlines`: Returns list of latest bengali news of varied category
 
 #### Fetch bangla news by query
- - `,,,`: TODO
+ - `fetch_news_headlines_by_query`: Returns list of bengali news queried by the user
 
 
 ## 🔌 For development
