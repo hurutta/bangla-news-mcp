@@ -14,6 +14,7 @@
 <div align="center" style="line-height: 0;">
 
 [![MCP](https://badge.mcpx.dev?type=server)](https://github.com/modelcontextprotocol/servers)
+[![smithery badge](https://smithery.ai/badge/@hurutta/bangla-news-mcp)](https://smithery.ai/server/@hurutta/bangla-news-mcp)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)
 [![Issues](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)
 [![License](https://img.shields.io/github/license/hurutta/bangla-news-mcp.svg)](https://github.com/hurutta/bangla-news-mcp/blob/main/LICENSE)
@@ -30,6 +31,13 @@ Fast, scalable, and optimized for bengali language processing.
 
 ## 🔬 Installation
 
+### Installing via Smithery
+
+To install bangla-news-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@hurutta/bangla-news-mcp):
+
+```bash
+npx -y @smithery/cli install @hurutta/bangla-news-mcp --client claude
+```
 
 ### Using a virtual environment
 ```bash
