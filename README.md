@@ -11,19 +11,13 @@
 
 
 <hr>
-<div align="center" style="line-height: 1;">
-    <a href="https://github.com/modelcontextprotocol/servers" target="_blank" style="margin: 2px;">
-        <img alt="MCP Server" src="https://badge.mcpx.dev?type=server" style="display: inline-block; vertical-align: middle;"/>
-    </a>
-    <a href="https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp" target="_blank" style="margin: 2px;">
-        <img alt="Smithery Badge" src="https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp" style="display: inline-block; vertical-align: middle;"/>
-    </a>
-    <a href="https://img.shields.io/github/issues/hurutta/bangla-news-mcp" target="_blank" style="margin: 2px;">
-        <img alt="Issues" src="https://img.shields.io/github/issues/hurutta/bangla-news-mcp" style="display: inline-block; vertical-align: middle;"/>
-    </a>
-    <a href="https://github.com/hurutta/bangla-news-mcp/blob/main/LICENSE" target="_blank" style="margin: 2px;">
-        <img alt="MIT License" src="https://img.shields.io/github/license/hurutta/bangla-news-mcp.svg" style="display: inline-block; vertical-align: middle;"/>
-    </a>
+<div align="center" style="line-height: 0;">
+
+[![MCP](https://badge.mcpx.dev?type=server)](https://github.com/modelcontextprotocol/servers)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)](https://img.shields.io/github/v/tag/hurutta/bangla-news-mcp)
+[![Issues](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)](https://img.shields.io/github/issues/hurutta/bangla-news-mcp)
+[![License](https://img.shields.io/github/license/hurutta/bangla-news-mcp.svg)](https://github.com/hurutta/bangla-news-mcp/blob/main/LICENSE)
+
 </div>
 
 
@@ -36,7 +30,6 @@ Fast, scalable, and optimized for bengali language processing.
 
 ## 🔬 Installation
 
----
 
 ### Using a virtual environment
 ```bash
@@ -64,19 +57,28 @@ pip install -e .
 
 ## 🔌 Usage
 
----
 
-### Running the server
-```bash
-# If installed in a virtual environment
-source venv/bin/activate
-python -m bangla_news_mcp
+### Configuration for Claude.app
+Add to your Claude settings:
+```json
+{
+  "mcpServers": {
+    "bangla_news": {
+      "command": "python",
+      "args": [
+        "-m",
+        "bangla_news_mcp"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
 ```
-
+👆🏼 If you install pip package inside a virtual environment, adjust the `command` and `args`.
 
 ## 🛠️ Available Tools
 
----
 
 #### Fetch latest bangla news headlines
  - `,,,`: TODO
@@ -87,7 +89,6 @@ python -m bangla_news_mcp
 
 ## 🔌 For development
 
----
 #### Activate the virtual environment where the package is installed, and run -
 ```bash
 source venv/bin/activate
