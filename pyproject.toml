@@ -1,6 +1,6 @@
 [project]
 name = "bangla-news-mcp"
-version = "1.0.0"
+version = "1.0.2"
 description = "A Model Context Protocol (MCP) server that retrieves bangla news to provide context to LLMs."
 readme = "README.md"
 requires-python = ">=3.10"

@@ -1,4 +1,4 @@
-[<img src="assets/bangla_news_mcp_logo.png" style="height:138px" align="right">](https://extensions.gnome.org/extension/6334/bangla-time/)
+[<img src="https://raw.githubusercontent.com/hurutta/bangla-news-mcp/main/assets/bangla_news_mcp_logo.png" style="height:138px" align="right">](https://github.com/hurutta/bangla-news-mcp)
 
 <div style="display: flex; align-items: center;">
 
