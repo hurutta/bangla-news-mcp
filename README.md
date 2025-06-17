@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hurutta-bangla-news-mcp-badge.png)](https://mseep.ai/app/hurutta-bangla-news-mcp)
+
 [<img src="https://raw.githubusercontent.com/hurutta/bangla-news-mcp/main/assets/bangla_news_mcp_logo.png" style="height:138px" align="right">](https://github.com/hurutta/bangla-news-mcp)
 
 <div style="display: flex; align-items: center;">
